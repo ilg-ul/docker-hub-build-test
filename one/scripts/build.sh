@@ -34,6 +34,11 @@ script_folder_name="$(basename "${script_folder_path}")"
 
 # =============================================================================
 
+unset TERM
+
+apt-get update
+apt-get install -y lsb-release
+
 echo
 echo "nproc=$(nproc)"
 echo "pwd=$(pwd)"
@@ -43,10 +48,7 @@ echo "env..."
 env | sort
 echo 
 
-unset TERM
 
-apt-get update
-apt-get install -y gcc
 
 echo
 echo "Container done."
