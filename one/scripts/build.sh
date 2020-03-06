@@ -5,7 +5,7 @@ env | sort
 
 unset TERM
 
-apt-get install -y lsb-release
+apt-get install -y gcc
 
 echo
 echo "Container done."
