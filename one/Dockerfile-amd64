@@ -1,4 +1,6 @@
 FROM ubuntu:latest
+
 ADD scripts /input
 RUN JOBS=$(nproc) bash /input/build.sh
+
 CMD ["/bin/bash"]
