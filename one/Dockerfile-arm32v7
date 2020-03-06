@@ -1,0 +1,9 @@
+FROM arm32v7/ubuntu:latest
+
+ENTRYPOINT ["linux32"]
+
+ADD scripts /input
+RUN JOBS=$(nproc) linux32 bash /input/build.sh
+
+CMD ["/bin/bash"]
+
