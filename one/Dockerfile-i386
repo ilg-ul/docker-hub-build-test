@@ -1,4 +1,4 @@
-FROM i386/ubuntu:latest
+FROM --platform=linux/i386 ubuntu:latest
 
 ENTRYPOINT ["linux32"]
 
