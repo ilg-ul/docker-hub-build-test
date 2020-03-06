@@ -35,7 +35,13 @@ script_folder_name="$(basename "${script_folder_path}")"
 # =============================================================================
 
 echo
+echo "nproc=$(nproc)"
+echo "pwd=$(pwd)"
+uname -a
+lsb_release -a
+echo "env..."
 env | sort
+echo 
 
 unset TERM
 
